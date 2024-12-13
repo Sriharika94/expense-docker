@@ -24,3 +24,8 @@ services:
     - 80:80
     depends_on:
     - backend
+
+
+
+# docker compose up -d  creates all containers
+# docker copmose down -d removes all
