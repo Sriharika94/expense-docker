@@ -16,6 +16,8 @@ then
     dnf -y install dnf-plugins-core
     dnf config-manager --add-repo https://download.docker.com/linux/rhel/docker-ce.repo
     sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+    sudo systemctl enable --now docker
+    sudo usermod -aG docker ec2-user
 
     if [ $? -ne 0 ]
     then
@@ -26,3 +28,6 @@ then
 else
     echo "docker is already installed"
 fi
+
+
+
