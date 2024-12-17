@@ -28,4 +28,4 @@ services:
 
 
 # docker compose up -d  creates all containers
-# docker copmose down -d removes all
+# docker copmose down  removes all
